@@ -6,7 +6,7 @@ body {
     margin: 0; padding: 20px;
     display: flex;
     flex-directon: column;
-    justify-content: center;
+    align-content: center;
 
 }
 
@@ -83,6 +83,7 @@ body {
 .seats-container {
     display: flex;
     justify-content: center;
+    flex-direction: row;
 }
 
 .seat {
