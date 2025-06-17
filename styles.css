@@ -1,3 +1,10 @@
+* {
+    display: flex;
+    flex-directon: column;
+    align-items: center; 
+}
+    
+
 body {
     display: flex;
     flex-directon: column;
