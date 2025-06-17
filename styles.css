@@ -77,6 +77,13 @@ body {
     font-weight: bold;
 }
 
+.seating-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
 .seats-container {
     display: flex;
     justify-content: center;
