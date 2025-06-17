@@ -1,68 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Movie Seat Booking</title>
-  <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <title>Movie Seat Booking</title>
 </head>
+
 <body>
-  <div class="container">
+    <h1>Movie Seat Booking</h1>
+    <!-- movie selector -->
     <div class="movie-container">
-      <label for="movies">Movie:</label>
-      <select id="movies">
-        <option value="20">Oppenheimer</option>
-        <option value="20">The Batman</option>
-        <option value="10">One Fine Day</option>
-      </select>
+        <label>Select a movie:</label>
+        <select id="movies">
+            <option value="20$">Oppenheimer</option>
+            <option value="20$">The Batman</option>
+            <option value="10$">One Fine Day</option>
+            <option value="15$">The Sixth Sense</option>
+            <option value="15$">Little Women</option>
+            <option value="10$">Ella Enchanted</option>
+            <option value="10$">Past Lives</option>
+            <option value="20$">Zodiac</option>
+        </select>
     </div>
-
-    <div class="movie-container">
-      <label for="date">Date:</label>
-      <input type="date" id="date" />
-      <label for="time">Time:</label>
-      <input type="time" id="time" />
+    <!-- date selector -->
+    <div class="date">
+        <label>Select a date:</label>
+        <input type="date" id="date" min="2024-07-19" max="2024-07-25">
+        <select id="time">
+            <option value="11:30">11:30</option>
+            <option value="14:30">14:30</option>
+            <option value="17:30">17:30</option>
+            <option value="20:30">20:30</option>
+            <option value="23:30">23:30</option>
+        </select>
     </div>
-
+    <!-- Screen -->
     <div class="screen">SCREEN</div>
-
-    <div class="seating-layout">
-      <!-- Row A -->
-      <div class="row">
+    <div class="container">
+     <!-- Seat rows -->
+        <div class="row">
         <div class="row-label">A</div>
         <div class="seats-container">
-          <div class="seat"></div>
-          <div class="seat"></div>
-          <div class="seat"></div>
-          <div class="corridor"></div>
-          <div class="seat seat-sold"></div>
-          <div class="seat"></div>
-          <div class="seat"></div>
+                <div class="seat">
+                    <div class="seat-number">1</div>
+                </div>
+                <div class="seat">
+                    <div class="seat-number">2</div>
+                </div>
+                <div class="seat">
+                    <div class="seat-number">3</div>
+                </div>
+                <div class="seat">
+                    <div class="seat-number">4</div>
+                </div>
+                <!-- corridor -->
+                <div class="corridor"></div>
+                <div class="seat">
+                    <div class="seat-number">5</div>
+                </div>
+                <div class="seat">
+                    <div class="seat-number">6</div>
+                </div>
+                <div class="seat">
+                    <div class="seat-number">7</div>
+                </div>
+                <div class="seat">
+                    <div class="seat-number">8</div>
+                </div>
+                <div class="seat">
+                    <div class="seat-number">9</div>
+                </div>
+                <div class="seat">
+                    <div class="seat-number">10</div>
+                </div>
+                <div class="seat">
+                    <div class="seat-number">11</div>
+                </div>
+                <div class="seat">
+                    <div class="seat-number">12</div>
+                </div>
+                <!-- corridor -->
+                <div class="corridor"></div>
+                <div class="seat">
+                    <div class="seat-number">13</div>
+                </div>
+                <div class="seat">
+                    <div class="seat-number">14</div>
+                </div>
+                <div class="seat">
+                    <div class="seat-number">15</div>
+                </div>
+                <div class="seat">
+                    <div class="seat-number">16</div>
+                </div>
+            </div>
         </div>
-      </div>
-      <!-- Row B -->
-      <div class="row">
+    </div>
+    <!-- ROW B -->
+    <div class="row">
         <div class="row-label">B</div>
         <div class="seats-container">
-          <div class="seat"></div>
-          <div class="seat seat-sold"></div>
-          <div class="seat"></div>
-          <div class="corridor"></div>
-          <div class="seat"></div>
-          <div class="seat"></div>
-          <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <!-- corridor -->
+            <div class="corridor"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <!-- corridor -->
+            <div class="corridor"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
         </div>
-      </div>
+    </div>
+    <!-- ROW C -->
+    <div class="row">
+        <div class="row-label">C</div>
+        <div class="seats-container">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <!-- corridor -->
+            <div class="corridor"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <!-- corridor -->
+            <div class="corridor"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+    </div>
+    <!-- ROW D -->
+    <div class="row">
+        <div class="row-label">D</div>
+        <div class="seats-container">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <!-- corridor -->
+            <div class="corridor"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <!-- corridor -->
+            <div class="corridor"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+    </div>
+    <!-- ROW E -->
+    <div class="row">
+        <div class="row-label">E</div>
+        <div class="seats-container">
+            <div class="seat"></div>
+            <div class="seat-sold"></div>
+            <div class="seat-sold"></div>
+            <div class="seat"></div>
+            <!-- corridor -->
+            <div class="corridor"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <!-- corridor -->
+            <div class="corridor"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+    </div>
+    <!-- ROW F -->
+    <div class="row">
+        <div class="row-label">F</div>
+        <div class="seats-container">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <!-- corridor -->
+            <div class="corridor"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat-sold"></div>
+            <div class="seat-sold"></div>
+            <div class="seat-sold"></div>
+            <!-- corridor -->
+            <div class="corridor"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+    </div>
+    <!-- ROW G -->
+    <div class="row">
+        <div class="row-label">G</div>
+        <div class="seats-container">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <!-- corridor -->
+            <div class="corridor"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat-sold"></div>
+            <div class="seat-sold"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <!-- corridor -->
+            <div class="corridor"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+    </div>
+    <!-- ROW H -->
+    <div class="row">
+        <div class="row-label">H</div>
+        <div class="seats-container">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat-sold"></div>
+            <!-- corridor -->
+            <div class="corridor"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <!-- corridor -->
+            <div class="corridor"></div>
+            <div class="seat"></div>
+            <div class="seat-sold"></div>
+            <div class="seat-sold"></div>
+            <div class="seat-sold"></div>
+        </div>
+    </div>
+    <!-- ROW I -->
+    <div class="row">
+        <div class="row-label-i">I</div>
+        <div class="seats-container">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <!-- corridor -->
+            <div class="corridor"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat-sold"></div>
+            <div class="seat-sold"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <!-- corridor -->
+            <div class="corridor"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat-selected"></div>
+        </div>
     </div>
 
-    <div class="seat-option">
-      <div class="available">Available</div>
-      <div class="selected">Selected</div>
-      <div class="sold">Sold</div>
+    <!-- seat options -->
+    <div class="row">
+        <div class="available">
+            <div class="seat-option">Available</div>
+        </div>
+        <div class="selected">
+            <div class="seat-option">Selected</div>
+        </div>
+        <div class="sold">
+            <div class="seat-option">Sold</div>
+        </div>
     </div>
-  </div>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
