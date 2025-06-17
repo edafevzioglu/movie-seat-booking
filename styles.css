@@ -9,9 +9,14 @@ body {
     box-sizing: border-box;
 }
 
-.movie-container {
-    margin: 10px;
+.movie-container,
+.date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
 }
+
 
 #movies {
     border: 0;
@@ -25,7 +30,7 @@ body {
     font: karla, sans serif;
 }
 
-#date,
+
 #time {
     border: 0;
     border-radius: 5px;
