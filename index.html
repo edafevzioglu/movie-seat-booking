@@ -3,40 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Movie Seat Selector</title>
+  <title>Movie Seat Booking</title>
   <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="container">
     <div class="movie-container">
-      <label for="movies">Choose a movie:</label>
+      <label for="movies">Movie:</label>
       <select id="movies">
-        <option value="10">Barbie (10 TL)</option>
-        <option value="12">Oppenheimer (12 TL)</option>
-        <option value="8">Past Lives (8 TL)</option>
+        <option value="20">Oppenheimer</option>
+        <option value="20">The Batman</option>
+        <option value="10">One Fine Day</option>
       </select>
     </div>
 
     <div class="movie-container">
-      <label for="date">Choose a date:</label>
-      <select id="date">
-        <option>June 20</option>
-        <option>June 21</option>
-        <option>June 22</option>
-      </select>
-
-      <label for="time">Choose a time:</label>
-      <select id="time">
-        <option>13:00</option>
-        <option>15:00</option>
-        <option>17:00</option>
-      </select>
+      <label for="date">Date:</label>
+      <input type="date" id="date" />
+      <label for="time">Time:</label>
+      <input type="time" id="time" />
     </div>
 
     <div class="screen">SCREEN</div>
 
     <div class="seating-layout">
+      <!-- Row A -->
       <div class="row">
         <div class="row-label">A</div>
         <div class="seats-container">
@@ -49,6 +41,7 @@
           <div class="seat"></div>
         </div>
       </div>
+      <!-- Row B -->
       <div class="row">
         <div class="row-label">B</div>
         <div class="seats-container">
@@ -57,11 +50,10 @@
           <div class="seat"></div>
           <div class="corridor"></div>
           <div class="seat"></div>
-          <div class="seat seat-sold"></div>
+          <div class="seat"></div>
           <div class="seat"></div>
         </div>
       </div>
-      <!-- Add more rows here if needed -->
     </div>
 
     <div class="seat-option">
