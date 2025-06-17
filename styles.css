@@ -1,18 +1,14 @@
 body {
     display: flex;
-    justify-content: center; 
+    align-items: center;
     background-color: #1E1F1F;
     color: white;
-    font-family: 'Karla', sans-serif; 
-    margin: 0;
-    padding: 20px;
-    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
 }
 
 .movie-container {
-  margin: 10px;
+    margin: 10px;
 }
-
 
 #movies {
     border: 0;
@@ -55,8 +51,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    max-width: 1000px;
 }
 
 .row {
@@ -79,13 +73,6 @@ body {
     display: flex;
     justify-content: center;
 }
-
-.seating-layout {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-} 
 
 .seat {
     background-color: #B6C1CB;
@@ -183,4 +170,4 @@ body {
 .seat:not(.sold):hover {
     cursor: pointer;
 
-}
+}     
